@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ title }}</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+<h1>Решение квадратного уравнения</h1>
+</header>
+<h2>Введите значения</h2>
+<form action="" method="post">
+    <label>Коэфициент при х^2</label>
+    <input type="number" name="num_1">
+    <label>Коэфициент при х</label>
+    <input type="number" name="num_2">
+    <label>Свободный кофициент</label>
+    <input type="number" name="num_3">
+    <input type="submit" value="Решить">
+    </form>
+<h2>Результат</h2>
+<p>
+    {{out}}
+    <br>
+    {{out2}}
+</p>
+
+</body>
+</html>
